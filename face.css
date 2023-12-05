@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29vh; /* Optionally, to center vertically in the viewport */
+    }
+.assesment{
+    color: #fff;
+    border-radius: 25px;
+}
+.turnover{
+    color: #fff;
+    border-radius: 25px;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 0%;
+   
+}
+.button{
+    display: flex;
+    align-items: center;
+      padding: 12px 12px;      
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid #303f4a; /* Border color */
+      color: #3498db; /* Text color */
+      border-radius: 25px; /* Border radius for round edges */
+      transition: background-color 0.3s, color 0.3s;
+      height: 2em; width: 4em;
+}
+.button:hover {
+    background-color: #3498db; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+.body{
+    background-color: rgb(23, 86, 166);
+   
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-stretch: semi-condensed;
+    color: #fff;
+}
