@@ -23,32 +23,41 @@
 .button{
     display: flex;
     align-items: center;
-      padding: 12px 12px;      
+      padding-top: 2px;
+      padding-bottom: 2px;     
       font-size: 16px;
       text-align: center;
       text-decoration: none;
       cursor: pointer;
       border: 1px solid #303f4a; /* Border color */
-      color: #3498db; /* Text color */
       border-radius: 25px; /* Border radius for round edges */
       transition: background-color 0.3s, color 0.3s;
       height: 2em; width: 4em;
+      background-color: #C95792;
+      
 }
 .button:hover {
-    background-color: #3498db; /* Background color on hover */
-    color: #fff; /* Text color on hover */
-}
-.body{
-    background-color: rgb(23, 86, 166);
-   
+    background-color: #F8B55F; /* Background color on hover */
+    color: #fff; Text color on hover
 }
 .heading{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     font-stretch: semi-condensed;
     color: #fff;
 }
+.body {
+    background-color: #3D365C;
+}
+.top-heading {
+    background-color: #331338;
+    border-radius: 7px;
+    padding: 1px;
+}
+
+  
