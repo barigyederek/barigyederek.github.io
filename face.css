@@ -38,7 +38,7 @@
 }
 .button:hover {
     background-color: #F8B55F; /* Background color on hover */
-    color: #fff; Text color on hover
+    color: #fff; /*Text color on hover*/
 }
 .heading{
     display: flex;
