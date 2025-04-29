@@ -14,8 +14,13 @@
 </div>
 
 <body class="body">
+    <div class="radioButtons">
+        <input type="radio" id="withrecords" name="taxBracket">
+        <label for="withrecords">With records</label>
+        <input type="radio" id="withoutrecords" name="taxBracket">
+        <label for="withoutrecords">Without records</label>
+    </div>
     <div class="container">
-
 
         <div>
             <label class="assesment" for="Assessment">Enter assesment amount here</label>
@@ -25,6 +30,10 @@
         <div>
             <label class="turnover" for="Gross">Annual Gross Turnover </label>
             <input type="text" id="turnover" name="turnover">
+        </div>
+        <div>
+            <label class="tax" for="result">Tax Due</label>
+            <input type="text" id="result" name="result" readonly>
         </div>
     </div>
 

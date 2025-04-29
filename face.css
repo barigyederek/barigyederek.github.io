@@ -59,5 +59,17 @@
     border-radius: 7px;
     padding: 1px;
 }
+.radioButtons{  
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+border-radius: 2px;
+padding-top: 20px;
+}
+.tax{  
+    color: #fff;
+    border-radius: 25px;
+}
 
   
