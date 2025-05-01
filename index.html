@@ -1,48 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head class="head">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULATOR</title>
-    <!-- Additional head elements like stylesheets or scripts can be added here -->
-    <link rel="stylesheet" href="face.css">
-</head>
-<meta name="google-site-verification" content="ZVxG4YmBEPEbX8IPbQVk51XgK8y8ZIo8K00iaYvxnas" />
-<div class="top-heading">
-    <h1 class="heading">PRESUMPTIVE TAX CALCULATOR</h1>
-</div>
+    <head class="head">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CALCULATOR</title>
+        <link rel="stylesheet" href="face.css">
+    </head>
 
-<body class="body">
-    <div class="radioButtons">
-        <input type="radio" id="withrecords" name="taxBracket">
-        <label for="withrecords">With records</label>
-        <input type="radio" id="withoutrecords" name="taxBracket">
-        <label for="withoutrecords">Without records</label>
-    </div>
-    <div class="container">
-
-        <div>
-            <label class="assesment" for="Assessment">Enter assesment amount here</label>
-            <input type="text" id="assesment" name="assesment">
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div>
-            <label class="turnover" for="Gross">Annual Gross Turnover </label>
-            <input type="text" id="turnover" name="turnover">
-        </div>
-        <div>
-            <label class="tax" for="result">Tax Due</label>
-            <input type="text" id="result" name="result" readonly>
-        </div>
+    <meta name="google-site-verification" content="ZVxG4YmBEPEbX8IPbQVk51XgK8y8ZIo8K00iaYvxnas" />    
+    
+    <div class="top-heading">
+        <h1 class="heading">PRESUMPTIVE TAX CALCULATOR</h1>
     </div>
 
-    </div>
-    <div class="button-div" id="button-div">
-        <button style="height:27px;width:75px" class="button" onclick="calcClick()"> <label>Proceed</label>
-        </button>
-    </div>
-</body>
-<script src="face.js"></script>
+    <body class="body">
 
+        <div class="calculator-div">
+           
+            <div class="radioButtons">
+                <input type="radio" id="withrecords" name="taxBracket">
+                <label for="withrecords">With records</label>
+                <input type="radio" id="withoutrecords" name="taxBracket">
+                <label for="withoutrecords">Without records</label>
+            </div>
+
+            <div class="container">
+
+                <div>
+                    <label class="turnover" for="Gross">Annual Gross Turnover</label>
+                    <input type="text" id="annualGrossTurnover" name="annualGrossTurnover">
+                </div>
+
+                <div>
+                    <label class="tax" for="result">Tax Due:</label>
+                    <input type="text" id="result" name="result" readonly>
+                </div>
+            </div>
+            <div class="button-div" id="button-div">
+
+                <button style="height:27px;width:75px" class="button" onclick="calcClick()"> <label>Proceed</label>
+                </button>
+
+            </div>
+        
+    </div>
+
+    </body>
+    <script src="face.js"></script>
 </html>

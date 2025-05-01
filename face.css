@@ -1,46 +1,46 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 29vh; /* Optionally, to center vertically in the viewport */
-    }
-.assesment{
+    gap: 10px;
+}
+
+.turnover {
     color: #fff;
     border-radius: 25px;
 }
-.turnover{
-    color: #fff;
-    border-radius: 25px;
-}
-.button-div{
+
+.button-div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 0%;
-   
 }
-.button{
-    display: flex;
-    align-items: center;
-      padding-top: 2px;
-      padding-bottom: 2px;     
-      font-size: 16px;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      border: 1px solid #303f4a; /* Border color */
-      border-radius: 25px; /* Border radius for round edges */
-      transition: background-color 0.3s, color 0.3s;
-      height: 2em; width: 4em;
-      background-color: #C95792;
-      
+
+.button {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #303f4a;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    height: 2em;
+    width: 4em;
+    background-color: #C95792;
+
 }
+
 .button:hover {
-    background-color: #F8B55F; /* Background color on hover */
-    color: #fff; /*Text color on hover*/
+    background-color: #F8B55F;
+    color: #fff;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,26 +50,53 @@
     font-variant: normal;
     font-stretch: semi-condensed;
     color: #fff;
+    margin: 0%;
+    font-weight: bold;
 }
-.body {
-    background-color: #3D365C;
+
+.body,html {
+    background-color: #3D365C; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    gap: 20px;
+    padding: 0%;
+    height: 100%;
 }
+
 .top-heading {
-    background-color: #331338;
-    border-radius: 7px;
-    padding: 1px;
+    width: 50%;          
+    background:#7b97ab;  
+    padding: 7px 0;      
+    text-align: center;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: sticky;     
+    top: 0;               
+    z-index: 100;
+    border-radius: 10px;
+    
 }
-.radioButtons{  
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-border-radius: 2px;
-padding-top: 20px;
+
+.radioButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 2px;
+    padding-top: 20px;
 }
-.tax{  
+
+.tax,
+.turnover {
     color: #fff;
     border-radius: 25px;
 }
 
-  
+.calculator-div {
+    display:flex;
+    justify-content:center;
+    align-items: center;  
+}

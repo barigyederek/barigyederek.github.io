@@ -1,12 +1,11 @@
 // DOM Elements
 const button = document.getElementById("button-div");
 const withoutRecordsBox = document.getElementById("withoutrecords");
-const withRecordsBox = document.getElementById("withrecords");
-const assessmentInput = document.getElementById("assesment");
-const turnoverOutput = document.getElementById("turnover");
+const withRecordsBox = document.getElementById("withrecords");;
+const annualGrossTurnoverInput = document.getElementById("annualGrossTurnover")
 
 // Format number with commas (e.g., 1000000 → "1,000,000")
-function formatCurrency(amount) {
+function formatCurrency (amount) {
     return amount.toLocaleString("en-US");
 }
 
@@ -50,12 +49,10 @@ function calculateWithoutRecords(turnover) {
 }
 
 // Main calculation function triggered by button click
-function calcClick() {
-    // 1. Calculate turnover from assessment input
-    const turnover = calculateTurnover();
-    const formattedTurnover = formatCurrency(turnover);
-    turnoverOutput.value = formattedTurnover;
-
+function calcClick () {
+    // 1. Get turnover from input field
+    const turnover = parseFloat(annualGrossTurnoverInput.value) || 0; // Default to 0 if invalid
+    
     // 2. Calculate tax based on selected radio button
     let tax;
     if (withRecordsBox.checked) {
@@ -63,17 +60,15 @@ function calcClick() {
     } else if (withoutRecordsBox.checked) {
         tax = calculateWithoutRecords(turnover);
     } else {
-        alert("Please select a tax method!");
+        alert ("Please select a tax method!");
         return;
     }
 
-    // 3. Display tax result (assuming a field with ID 'result' exists)
+    // 3. Display tax result
     const resultElement = document.getElementById("result");
     if (resultElement) {
         resultElement.value = formatCurrency(tax);
-    } else {
-        console.log("Tax Due:", formatCurrency(tax)); // Fallback for debugging
-    }
+    } else console.log("Tax Due:", formatCurrency(tax));
 }
 
 // Initialize default radio selection (optional)
