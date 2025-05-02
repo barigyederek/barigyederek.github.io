@@ -10,41 +10,47 @@
 
     <meta name="google-site-verification" content="ZVxG4YmBEPEbX8IPbQVk51XgK8y8ZIo8K00iaYvxnas" />    
     
-    <div class="top-heading">
-        <h1 class="heading">PRESUMPTIVE TAX CALCULATOR</h1>
-    </div>
+    
 
     <body class="body">
-
+            <div class="top-heading">
+                <h1 class="heading">PRESUMPTIVE TAX CALCULATOR</h1>
+            </div>
         <div class="calculator-div">
-           
-            <div class="radioButtons">
-                <input type="radio" id="withrecords" name="taxBracket">
-                <label for="withrecords">With records</label>
-                <input type="radio" id="withoutrecords" name="taxBracket">
-                <label for="withoutrecords">Without records</label>
-            </div>
-
-            <div class="container">
-
-                <div>
-                    <label class="turnover" for="Gross">Annual Gross Turnover</label>
-                    <input type="text" id="annualGrossTurnover" name="annualGrossTurnover">
-                </div>
-
-                <div>
-                    <label class="tax" for="result">Tax Due:</label>
-                    <input type="text" id="result" name="result" readonly>
-                </div>
-            </div>
-            <div class="button-div" id="button-div">
-
-                <button style="height:27px;width:75px" class="button" onclick="calcClick()"> <label>Proceed</label>
-                </button>
-
-            </div>
-        
-    </div>
+            <table class="calculator-table" cellpadding="5" cellspacing="0">
+                <tr>
+                    <!-- <th colspan="3" class="table-header">PRESUMPTIVE TAX CALCULATOR</th> -->
+                </tr>
+                <tr>
+                    <td colspan="3" class="radio-cell">
+                        <div class="radio-group">
+                            <input type="radio" id="withrecords" name="taxBracket" checked>
+                            <label for="withrecords">With records</label>
+                            <input type="radio" id="withoutrecords" name="taxBracket">
+                            <label for="withoutrecords">Without records</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" width="40%"><label for="annualGrossTurnover">Annual Gross Turnover:</label></td>
+                    <td width="40%"><input type="text" id="annualGrossTurnover" class="numField"></td>
+                    <td width="20%" rowspan="2" style="vertical-align: top">
+                        <button class="button calculate-btn" onclick="calcClick()">Calculate</button>
+                        <button class="button clear-btn" onclick="clearAll()">Clear All</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="result">Tax Due:</label></td>
+                    <td><input type="text" id="result" readonly class="resultField"></td>
+                </tr>
+                <tr>
+                    <!-- <td colspan="2" align="right">
+                        <button class="button clear-btn" onclick="clearAll()">Clear All</button>
+                    </td> -->
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
 
     </body>
     <script src="face.js"></script>

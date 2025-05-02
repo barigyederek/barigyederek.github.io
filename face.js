@@ -47,6 +47,12 @@ function calculateWithoutRecords(turnover) {
     else if (turnover <= 150000000) return 900000;
     else return 0;
 }
+// Function to clear all fields triggered by button click
+function clearAll() {
+    document.getElementById('annualGrossTurnover').value = '';
+    document.getElementById('result').value = '';
+    document.getElementById('withrecords').checked = true;
+}
 
 // Main calculation function triggered by button click
 function calcClick () {
